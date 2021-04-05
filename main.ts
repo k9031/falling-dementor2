@@ -7,7 +7,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 animation.runImageAnimation(
     dementor,
     dementorAnimationFrames,
-    50,
+    200,
     false
     )
 })
