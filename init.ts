@@ -440,6 +440,15 @@ game.onUpdateInterval(1500, function() {
     let bottomImg = obstacleBottomImgs [gapNumber]
     let gapImage = image.create(1, scene.screenHeight())
     gapImage.fill(1)
-let gapsprite = sprites.create(gapImage, SpriteKind. Gap)
- gapsprite.vx = -45
+let gapSprite = sprites.create(gapImage, SpriteKind. Gap)
+ gapSprite.vx = -45
+ gapSprite.x = 200
+let obstacleTopSprite = sprites.create(topImg, SpriteKind. Glub_Glub)
+obstacleTopSprite.vx = -45
+ obstacleTopSprite.x = 200
+obstacleTopSprite.top = 0
+let obstacleBottomSprite = sprites.create(bottomImg, SpriteKind.Glub_Glub)
+obstacleBottomSprite.vx = -45
+ obstacleBottomSprite.x = 200
+obstacleBottomSprite.bottom = scene.screenHeight()
 })
